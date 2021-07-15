@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title style="font-style: oblique; border: 5cm; color: black" ;>
+      TRAVEL LANDING PAGE
+    </title>
+  </head>
+  <body>
+    <section class="showcase">
+      <header>
+        <h2 class="logo">TRAVEL</h2>
+        <div class="toggle"></div>
+      </header>
+      <video src="explore.mp4" muted autoplay loop></video>
+      <div class="overlay"></div>
+      <div class="text">
+        <h2>NEVER STOP</h2>
+        <h2>EXPLORING THE WORLD</h2>
+        <p>
+          Exploring is all about getting out of your comfort zone, venturing
+          into the unknown, sampling new things and discovering foreign lands.
+          So if you’re looking for inspiration to bring out the explorer in you,
+          check out this bumper list of quotes about exploration that are
+          guaranteed to spark your wanderlust and motivate you to plan your next
+          adventure!
+        </p>
+        <a href="#">EXPLORE</a>
+      </div>
+      <ul class="Social">
+        <li>
+          <a href="#"><img src="instagram logo.png" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="twitter.png" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="facebook.png" alt="" /></a>
+        </li>
+      </ul>
+    </section>
+    <ul>
+      <div class="menu">
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">NATURE</a></li>
+          <li><a href="#">LANDSCAPE</a></li>
+          <li><a href="#">MOUNTAIN</a></li>
+          <li><a href="#">NEWS</a></li>
+        </ul>
+      </div>
+    </ul>
+    <script>
+      const menuToggle = document.querySelector(".toggle");
+      const showcase = document.querySelector(".showcase");
+
+      menuToggle.addEventListener("click", () => {
+        menuToggle.classList.toggle("active");
+        showcase.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
